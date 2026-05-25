@@ -1,15 +1,48 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
-nav
-{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
+    padding: 20px;
+    background-color: #333;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-left: auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav h2 {
+    color: white;
+}
+
+nav a:hover {
+    color: #ff6347;
+}
+
+nav li:last-child a {
+    background-color: red;
+    padding: 6px 12px;
+    border-radius: 5px;
+}
+
+nav li:last-child a:hover {
+    background: #cc0000;
+    color: black;
+}
+
+.active {
+    color: #ff6347;
 }
